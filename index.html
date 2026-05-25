@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PawPrint Chronicle · 技术支持</title>
+<meta name="description" content="PawPrint Chronicle —— 给毛孩子的温柔档案。技术支持、隐私政策与用户协议。">
+<style>
+  :root {
+    --primary: #FF8C42;
+    --secondary: #FFD166;
+    --warm-bg: #FFF3E6;
+    --text-primary: #333;
+    --text-secondary: #666;
+    --text-tertiary: #999;
+    --bg: #F8F8F8;
+    --card: #FFFFFF;
+    --divider: #EEEEEE;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --warm-bg: #2A1F18;
+      --text-primary: #F2F2F2;
+      --text-secondary: #B0B0B0;
+      --text-tertiary: #7E7E7E;
+      --bg: #000;
+      --card: #1C1C1E;
+      --divider: #3A3A3C;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    background: var(--warm-bg);
+    text-align: center;
+    padding: 56px 24px 40px;
+  }
+  header .logo { font-size: 64px; line-height: 1; }
+  header h1 {
+    margin: 16px 0 6px;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  header .subtitle {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+  header .tagline {
+    margin: 16px 0 0;
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px 16px 64px;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  }
+  .card h2 {
+    margin: 0 0 16px;
+    font-size: 20px;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .card h3 {
+    margin: 24px 0 8px;
+    font-size: 16px;
+    color: var(--text-primary);
+  }
+  .card p, .card li {
+    color: var(--text-secondary);
+    font-size: 15px;
+  }
+  .card ul {
+    padding-left: 20px;
+    margin: 8px 0;
+  }
+  .card li { margin-bottom: 6px; }
+  .meta {
+    color: var(--text-tertiary);
+    font-size: 13px;
+    margin: -8px 0 16px;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--divider);
+    padding: 14px 0;
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-q {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 6px;
+    font-size: 15px;
+  }
+  .faq-a {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 14px;
+  }
+
+  .contact-box {
+    background: var(--warm-bg);
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 16px;
+    text-align: center;
+  }
+  .contact-box .label {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin: 0 0 6px;
+  }
+  .contact-box a.email {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary);
+    text-decoration: none;
+    word-break: break-all;
+  }
+  .contact-box a.email:hover { opacity: 0.85; }
+
+  nav.toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+    padding: 0 4px;
+  }
+  nav.toc a {
+    background: var(--card);
+    color: var(--primary);
+    padding: 8px 16px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  }
+
+  footer {
+    text-align: center;
+    color: var(--text-tertiary);
+    font-size: 13px;
+    padding: 32px 16px 48px;
+  }
+  footer a { color: var(--primary); text-decoration: none; }
+
+  @media (max-width: 540px) {
+    header { padding: 44px 20px 32px; }
+    header h1 { font-size: 24px; }
+    .card { padding: 20px; }
+    .card h2 { font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🐾</div>
+  <h1>PawPrint Chronicle</h1>
+  <p class="subtitle">V2.0.0 · 给毛孩子的一份温柔档案</p>
+  <p class="tagline">从健康、消费、足迹到每一个第一次<br>把毛孩子的一生轻轻收好</p>
+</header>
+
+<main>
+
+  <nav class="toc">
+    <a href="#support">技术支持</a>
+    <a href="#faq">常见问题</a>
+    <a href="#privacy">隐私政策</a>
+    <a href="#terms">用户协议</a>
+  </nav>
+
+  <!-- ========== 技术支持 ========== -->
+  <section id="support" class="card">
+    <h2>📮 技术支持</h2>
+    <p>感谢你选择 PawPrint。如果你在使用过程中遇到任何问题、有功能建议、或想反馈使用体验，欢迎通过邮件与我们联系，我们会在 1–3 个工作日内回复：</p>
+    <div class="contact-box">
+      <p class="label">📧 联系邮箱</p>
+      <a class="email" href="mailto:erbracingu@icloud.com">erbracingu@icloud.com</a>
+    </div>
+    <h3>使用前小提示</h3>
+    <ul>
+      <li>PawPrint 完全本地运行，不需要注册或登录。</li>
+      <li>所有数据保存在你设备本机，建议定期使用「数据管理 - 导出数据」备份到 iCloud Drive。</li>
+      <li>支持 iOS 17+，推荐使用 iPhone 12 及以上机型获得最佳体验。</li>
+    </ul>
+  </section>
+
+  <!-- ========== 常见问题 ========== -->
+  <section id="faq" class="card">
+    <h2>❓ 常见问题</h2>
+
+    <div class="faq-item">
+      <p class="faq-q">Q：我的数据会上传到云端吗？</p>
+      <p class="faq-a">不会。PawPrint 不连接任何服务器，所有内容（包括照片、记录、徽章状态）100% 保存在你本机。</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Q：换手机怎么迁移数据？</p>
+      <p class="faq-a">在旧设备进入「我的 - 数据管理 - 导出数据」生成 JSON 文件，存到 iCloud Drive 或 AirDrop 给新设备，再在新设备上「导入数据」即可。</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Q：疫苗提醒为什么没收到通知？</p>
+      <p class="faq-a">请在系统「设置 - 通知 - PawPrint」中开启允许通知。同时记得在录入疫苗时填写「下次接种日期」。</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Q：照片占用空间太大怎么办？</p>
+      <p class="faq-a">App 会自动压缩上传的照片。若空间紧张，可以删除不再需要的里程碑或足迹打卡，对应照片会一并清除。</p>
+    </div>
+
+    <div class="faq-item">
+      <p class="faq-q">Q：徽章为什么没有自动解锁？</p>
+      <p class="faq-a">徽章在你新增/编辑相关记录时自动检测。请确保对应模块的数据完整，例如「跨城旅行家」需要至少 3 个不同城市的足迹打卡。</p>
+    </div>
+  </section>
+
+  <!-- ========== 隐私政策 ========== -->
+  <section id="privacy" class="card">
+    <h2>🔒 隐私政策</h2>
+    <p class="meta">生效日期：2026 年 5 月 25 日 · 版本 V2.0.0</p>
+
+    <h3>一、引言</h3>
+    <p>欢迎使用 PawPrint Chronicle（以下简称"PawPrint"或"我们"）。我们非常重视您的隐私与个人信息保护。本《隐私政策》旨在帮助您了解我们在您使用本应用过程中如何处理与您相关的信息。</p>
+
+    <h3>二、我们不收集任何个人信息</h3>
+    <p>PawPrint 是一款完全本地运行的应用。我们不设置账号体系，不要求您注册或登录，不会收集、上传或储存您的姓名、电话、邮箱、位置、设备标识符等任何个人身份信息。</p>
+    <p>您在 App 中创建的所有内容（包括但不限于宠物档案、疫苗记录、生病记录、生命线、食品记录、消费记录、足迹打卡、徽章状态、回忆录、照片等），均仅保存在您的设备本地（基于 Apple SwiftData 与本机相册），不会被发送至我们或任何第三方服务器。</p>
+
+    <h3>三、设备权限说明</h3>
+    <p>为实现完整的记录功能，PawPrint 在您主动操作时可能会请求以下系统权限。所有权限均可在系统「设置 - PawPrint」中随时关闭：</p>
+    <ul>
+      <li><strong>相册 / 照片访问权限</strong>：用于您选择宠物头像、上传里程碑照片、足迹打卡照片、就诊报告等。</li>
+      <li><strong>相机权限</strong>（如启用拍照入口）：用于您直接拍摄照片用于记录。</li>
+      <li><strong>文件访问权限</strong>：用于您主动「导出数据」「导入数据」时读写 JSON 文件。</li>
+    </ul>
+    <p>本应用不请求位置、通讯录、麦克风、健康、运动等任何与核心功能无关的权限。</p>
+
+    <h3>四、数据存储与安全</h3>
+    <p>您的所有数据均存储于您本机（受 iOS 系统沙盒与文件系统加密保护）。我们不持有任何可解密您本地数据的密钥。</p>
+    <p>由于数据完全保存在本机，请您注意：当您卸载应用、清除应用数据、更换设备且未导出备份，或您的设备发生故障时，本地数据可能无法恢复。建议定期使用「我的 - 数据管理 - 导出数据」功能将数据备份。</p>
+
+    <h3>五、第三方服务</h3>
+    <p>PawPrint 不集成任何第三方统计、广告、推送、社交分享或行为分析 SDK。App Store 自带的标准下载与崩溃统计由 Apple 公司直接提供与处理，遵循 Apple 的隐私政策，PawPrint 无法访问其中的个人数据。</p>
+
+    <h3>六、儿童隐私</h3>
+    <p>PawPrint 主要面向宠物主人使用，并非定向面向 14 周岁以下儿童的产品。如未成年人在监护人指导下使用本应用，我们鼓励监护人帮助其了解本政策的全部内容。</p>
+
+    <h3>七、您的权利</h3>
+    <p>由于我们不收集您的任何个人信息，您对您的数据拥有完整的控制权：可随时查看、修改、导出、删除任意记录或全部数据。</p>
+
+    <h3>八、隐私政策的更新</h3>
+    <p>我们可能会适时更新本政策。当政策内容发生重大变更时，将通过版本更新说明告知您。最新版本始终可在本页查看。</p>
+
+    <h3>九、联系我们</h3>
+    <p>如对本隐私政策有任何疑问，可发送邮件至 <a href="mailto:erbracingu@icloud.com" style="color: var(--primary); text-decoration: none; font-weight: 500;">erbracingu@icloud.com</a> 与我们联系。</p>
+  </section>
+
+  <!-- ========== 用户协议 ========== -->
+  <section id="terms" class="card">
+    <h2>📜 用户协议</h2>
+    <p class="meta">生效日期：2026 年 5 月 25 日 · 版本 V2.0.0</p>
+
+    <h3>一、协议接受</h3>
+    <p>本协议是您与 PawPrint Chronicle（以下简称"本应用"或"我们"）之间就您下载、安装、使用本应用所订立的协议。您一旦下载、安装或使用本应用，即视为您已阅读、理解并接受本协议全部条款。</p>
+
+    <h3>二、服务说明</h3>
+    <p>PawPrint 是一款面向宠物主人的本地化生活记录工具，提供宠物档案、疫苗与健康记录、生命线、食品与消费记录、足迹地图、徽章成就、年度回忆录等功能，所有数据均保存在您的本机设备。</p>
+
+    <h3>三、用户使用规范</h3>
+    <p>您承诺：</p>
+    <ul>
+      <li>不利用本应用进行任何违反所在地法律法规、社会公共利益或第三方合法权益的行为；</li>
+      <li>不上传、记录涉及色情、暴力、政治敏感、侵犯他人隐私或知识产权的内容；</li>
+      <li>不通过反向工程、反编译等方式破解本应用，或未经授权进行修改、复制、再发布；</li>
+      <li>不利用本应用名义从事任何商业牟利活动。</li>
+    </ul>
+
+    <h3>四、知识产权</h3>
+    <p>本应用的软件代码、界面设计、图标、文案、徽章插画等所有内容的著作权及其他知识产权，归 PawPrint 开发者所有。</p>
+    <p>您在本应用内创建的内容（如记录、照片、文字等）的著作权归您所有，本应用仅在您本机展示与处理这些内容。</p>
+
+    <h3>五、免责声明</h3>
+    <p>本应用提供的疫苗周期、健康提醒等信息<strong>仅供参考</strong>，不能替代专业兽医的诊断与建议。涉及宠物健康的决策，请务必咨询执业兽医。</p>
+    <p>因设备丢失、损坏、卸载、系统故障或您主动操作（如清除数据）导致的数据丢失，我们不承担责任。</p>
+
+    <h3>六、付费与订阅</h3>
+    <p>当前版本 PawPrint 不包含任何应用内购买或订阅项目，全部功能免费提供。</p>
+
+    <h3>七、协议变更</h3>
+    <p>我们有权根据法律法规变化或运营需要适时修订本协议。修订后的协议将在新版本中以更新的"生效日期"展示。</p>
+
+    <h3>八、法律适用与争议解决</h3>
+    <p>本协议的成立、生效、解释及争议解决均适用您所在地的现行法律。因本协议产生的争议，双方应首先友好协商解决。</p>
+
+    <h3>九、联系方式</h3>
+    <p>如对本协议有任何疑问，请发送邮件至 <a href="mailto:erbracingu@icloud.com" style="color: var(--primary); text-decoration: none; font-weight: 500;">erbracingu@icloud.com</a> 与我们联系。</p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 PawPrint Chronicle · Made with ❤️ for every furry family member<br>
+  <a href="#support">回到顶部</a>
+</footer>
+
+</body>
+</html>
